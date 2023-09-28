@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 export default function BaseApp({children}){
@@ -7,9 +8,9 @@ export default function BaseApp({children}){
             <div className="sideBar">
                 <div className="sideBarContent">
                     <ul className="nav-menu">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/book">Books</a></li>
-                        <li><a href="/book/add">Add</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/book">Books</Link></li>
+                        <li><Link to="/book/add">Add</Link></li>
                     </ul>
                 </div>
             </div>
